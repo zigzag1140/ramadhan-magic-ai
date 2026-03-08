@@ -11,10 +11,33 @@ api_key = os.getenv("DASHSCOPE_API_KEY")
 # 1. GENERATE CAPTION (Qwen-Max)
 def get_caption(msg):
     pro_prompt = f"""
-    CONTEXT: Kamu adalah Social Media Specialist ahli konten viral Ramadan Indonesia.
-    USER TOPIC: {msg}
-    TASK: Buat 1 caption pendek (max 20 kata), lucu/relate, bahasa gaul Jakarta, akhiri 2-3 hashtag unik.
-    CONSTRAINT: JANGAN gunakan tanda kutip, langsung berikan teksnya.
+    ROLE:
+    Kamu adalah Social Media Strategist Indonesia yang ahli membuat caption viral untuk konten Ramadan.
+
+    INPUT TOPIK:
+    {msg}
+
+    TUJUAN:
+    Buat 1 caption pendek yang sangat relate dengan topik di atas dan terasa seperti caption viral Instagram/TikTok Indonesia.
+
+    GAYA PENULISAN:
+    - Bahasa gaul Jakarta
+    - Lucu, ringan, dan relatable kehidupan Ramadan
+    - Gunakan punchline atau twist humor di akhir
+    - Gaya santai seperti orang curhat atau bercanda di medsos
+
+    ATURAN:
+    - Maksimal 20 kata
+    - Jangan gunakan tanda kutip
+    - Jangan gunakan emoji
+    - Hindari kalimat formal
+    - Caption harus langsung nyambung dengan topik
+
+    HASHTAG:
+    Tambahkan 2–3 hashtag kreatif, unik, dan masih terkait Ramadan.
+
+    OUTPUT:
+    Berikan hanya 1 caption saja tanpa penjelasan tambahan.
     """
     
     url = "https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
@@ -46,7 +69,7 @@ def get_image(msg):
     
     [CHARACTER & STYLE]
     - Style: High-end cinematic 3D stylized animation.
-    - Character: One Indonesian person, facial expression and clothes MUST match the mood of: {msg}.
+    - Character: Indonesian person, facial expression and clothes MUST match the mood of: {msg}.
     - Lighting: Atmosphere must strictly follow the vibe of: {msg}.
     
     [STRICT NO-TEXT]
