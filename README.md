@@ -5,7 +5,7 @@ Aplikasi Web interaktif bertenaga AI yang dirancang khusus untuk memeriahkan sua
 ---
 
 ## ✨ Fitur Utama
-- **AI Visual Generation (Wan2.1)**: Menggunakan model **Wan2.1** terbaru untuk menghasilkan ilustrasi visual Ramadan yang berkualitas tinggi dan artistik.
+- **AI Visual Generation (wan2.6-t2i)**: Menggunakan model **wan2.6-t2i** terbaru untuk menghasilkan ilustrasi visual Ramadan yang berkualitas tinggi dan artistik.
 - **Smart NLP Captioning (Qwen-Max)**: Didukung oleh **Qwen-Max**, model bahasa (LLM) tercanggih untuk memahami konteks curhatan pengguna dan mengubahnya menjadi caption yang menyentuh hati.
 - **Modern Glassmorphism UI**: Antarmuka elegan dengan efek kaca yang responsif di berbagai perangkat.
 - **Download Ready**: Simpan hasil kreasi gambar langsung ke galeri dengan satu klik.
