@@ -1,0 +1,4 @@
+flask
+dashscope
+flask-cors
+requests

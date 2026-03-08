@@ -1,0 +1,59 @@
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #052E16; 
+    margin: 0; 
+    overflow-x: hidden; 
+}
+
+.bg-magic {
+    background: 
+        radial-gradient(ellipse at 27% 37%, #064E3B 0%, rgba(0, 0, 0, 0) 50%), 
+        radial-gradient(ellipse at 97% 21%, rgba(16, 185, 129, 0.30) 0%, rgba(0, 0, 0, 0) 50%), 
+        radial-gradient(ellipse at 52% 99%, #065F46 0%, rgba(0, 0, 0, 0) 50%), 
+        radial-gradient(ellipse at 10% 29%, #052E16 0%, rgba(0, 0, 0, 0) 50%), 
+        radial-gradient(ellipse at 97% 96%, #064E3B 0%, rgba(0, 0, 0, 0) 50%), 
+        #052E16;
+    background-attachment: fixed;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gold Magic Text Effect */
+.text-outline {
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #F97316 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+    font-weight: 500;
+}
+
+.btn-magic {
+    background: linear-gradient(135deg, #F97316 0%, #F59E0B 50%, #FBBF24 100%);
+    box-shadow: 0px 8px 24px rgba(245, 158, 11, 0.4);
+}
+
+.btn-download {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-download:hover { 
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer { 
+    0% { background-position: -200% 0; } 
+    100% { background-position: 200% 0; } 
+}
